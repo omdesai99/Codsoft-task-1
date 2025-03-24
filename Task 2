@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colorful Alarm Clock</title>
+  <link rel="stylesheet" href="alaram.css">
+</head>
+<body>
+  <div class="container">
+    <div class="clock">
+      <div id="timeDisplay" class="time-display">12:00:00</div>
+      <button id="toggleClock" class="clock-button">Start Clock</button>
+    </div>
+    <div class="alarm">
+      <h3 class="section-title">Set Alarm</h3>
+      <input type="time" id="alarmTime" class="alarm-input" />
+      <button id="setAlarm" class="alarm-button">Set Alarm</button>
+      <div id="alarmStatus" class="status-text">No Alarm Set</div>
+    </div>
+    <div class="alarm-message" id="alarmMessage">
+      <h2>ALARM GOING OFF!</h2>
+      <button id="stopAlarm" class="stop-button">Stop Alarm</button>
+    </div>
+  </div>
+  <audio id="alarmSound" src="alarm-sound.mp3" preload="auto"></audio>
+
+  <script src="alaram.js"></script>
+</body>
+</html>
